@@ -11,22 +11,18 @@
         <div class="form-group">
             {!! Form::label('title', 'Title:') !!}
             {!! Form::text('title', null, ['class'=>'form-control']) !!}
-            {{csrf_field()}}
         </div>
         <div class="form-group">
             {!! Form::label('email', 'Email:') !!}
             {!! Form::text('email', null, ['class'=>'form-control']) !!}
-            {{csrf_field()}}
         </div>
         <div class="form-group">
             {!! Form::label('role_id', 'Role:') !!}
-            {!! Form::text('role_id', null, ['class'=>'form-control']) !!}
-            {{csrf_field()}}
+            {!! Form::select('role_id', [''=>'Choose Options'] + $roles , null ,  ['class'=>'form-control']) !!}
         </div>
         <div class="form-group">
             {!! Form::label('status', 'Status:') !!}
-            {!! Form::text('status', null, ['class'=>'form-control']) !!}
-            {{csrf_field()}}
+            {!! Form::select('is_active', array(1 => 'Active', 0=> 'Not Active'), 0 , ['class'=>'form-control'])!!}
         </div>
         <div class="form-group">
              {!! Form::submit('Create User', ['class'=>'btn btn-primary']) !!}
