@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="965e45e2-a742-4c7c-b007-5563d3dc7f64" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/users/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="230">
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -279,18 +276,18 @@
       <workItem from="1548125676856" duration="1171000" />
       <workItem from="1548166369995" duration="5272000" />
       <workItem from="1548213560161" duration="4419000" />
-      <workItem from="1548291992295" duration="2674000" />
+      <workItem from="1548291992295" duration="2941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18622000" />
+    <option name="totallyTimeSpent" value="18889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="204" y="80" width="1440" height="839" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27971014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27971014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -543,8 +540,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/users/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="230">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
         </state>
       </provider>
     </entry>
