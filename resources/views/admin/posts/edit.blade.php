@@ -25,7 +25,13 @@
             {!! Form::textarea('body', null, ['class'=>'form-control']) !!}
         </div>
         <div class="form-group">
-            {!! Form::submit('Create Post', ['class'=>'btn btn-primary']) !!}
+            {!! Form::submit('Update Post', ['class'=>'btn btn-primary']) !!}
+        </div>
+        {!! Form::close() !!}
+
+        {!! Form::open(['method'=>'DELETE', 'action'=> ['AdminPostsController@destroy',$post->id],]) !!}
+        <div class="form-group">
+            {!! Form::submit('Delete Post', ['class'=>'btn btn-danger']) !!}
         </div>
         {!! Form::close() !!}
     </div>
