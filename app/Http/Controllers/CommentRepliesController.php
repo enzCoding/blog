@@ -39,6 +39,9 @@ class CommentRepliesController extends Controller
         //
     }
 
+    public function createReply(Request $request){
+        return 'its work';
+    }
     /**
      * Display the specified resource.
      *
@@ -83,4 +86,6 @@ class CommentRepliesController extends Controller
     {
         //
     }
+
+
 }
