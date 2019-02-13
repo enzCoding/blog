@@ -76,6 +76,7 @@
         @if(count($comment->replies) > 0)
 
             @foreach($comment->replies as $reply)
+
             <!-- Nested Comment -->
             <div id ="nested-comment" class="media">
                 <a class="pull-left" href="#">
@@ -83,10 +84,15 @@
                 </a>
                 <div class="media-body">
                     <h4 class="media-heading">{{$reply->author}}
-                        <small>{{$reply->created_at->diffForHumans()}}M</small>
+                        <small>{{$reply->created_at->diffForHumans()}}</small>
                     </h4>
                     <p>{{$reply->body}}</p>
                 </div>
+
+                <div class="comment-reply-container">
+                    <button class="toggle-reply btn btn-primary pull-right">Reply</button>
+
+                    <div class="comment-reply">
 
                 {!! Form::open(['method'=>'POST', 'action'=> 'CommentRepliesController@createReply']) !!}
                     <div class="form-group">
@@ -99,6 +105,8 @@
                          {!! Form::submit('submit', ['class'=>'btn btn-primary']) !!}
                     </div>
                 {!! Form::close() !!}
+                    </div>
+            </div>
             </div>
             @endforeach
             <!-- End Nested Comment -->
@@ -110,4 +118,16 @@
 
 
 
-    @stop
+@stop
+
+@section('scripts')
+
+    <script>
+        $(".comment-reply-container .toggle-reply").click(function () {
+            $(this).next().slideToggle("slow");
+        });
+
+    </script>
+
+
+@stop
