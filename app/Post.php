@@ -24,4 +24,5 @@ class Post extends Model
     public function comment(){
         return $this->hasManyThrough('App\Post');
     }
+
 }
