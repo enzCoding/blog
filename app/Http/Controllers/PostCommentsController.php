@@ -55,7 +55,7 @@ class PostCommentsController extends Controller
 
         Comment::create($data);
 
-        $request->session()->flash('comment message','You message has been submitted and is waiting moderation');
+        $request->session()->flash('comment_message','You message has been submitted and is waiting moderation');
 
         return redirect()->back();
     }
