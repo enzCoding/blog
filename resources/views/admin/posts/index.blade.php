@@ -32,7 +32,7 @@
             <td><img height="50" src="{{$post->photo_id ? $post->photo->file : 'http://placehold.it/400x400'}}" alt=""></td>
             <td>{{$post->title}}</td>
             <td>{{$post->body}}</td>
-            <td><a href="{{route('home.post', $post->id)}}">View Post</a></td>
+            <td><a href="{{route('home.post', $post->slug)}}">View Post</a></td>
             <td><a href="{{route('admin.comments.show', $post->id)}}">View Comments</a></td>
             <td>{{$post->created_at->diffForHumans()}}</td>
             <td>{{$post->updated_at->diffForHumans()}}</td>
