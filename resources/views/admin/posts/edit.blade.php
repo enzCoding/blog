@@ -4,12 +4,12 @@
 
 
 @section('content')
-
+    @include('includes.tinyeditor')
     <h1>Create Posts</h1>
     <div class="row">
         <div class="col-sm-3">
 
-            <img height="50" src="{{$post->photo->file}}" alt="" class="img-responsive">
+            <img height="50" src="{{$post->photo ? $post->photo->file : $post->photoPlaceholder()}}" alt="" class="img-responsive">
 
         </div>
 

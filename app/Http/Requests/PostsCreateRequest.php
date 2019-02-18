@@ -25,7 +25,7 @@ class PostsCreateRequest extends Request
     {
         return [
             //
-            'photo_id'=>'required',
+//            'photo_id'=>'required',
             'title'=>'required',
             'body'=>'required'
         ];
